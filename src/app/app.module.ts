@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import {TodoModule} from "./modules/todo/todo.module";
+import {CommonModule} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import {TodoModule} from "./modules/todo/todo.module";
     BrowserModule,
     AppRoutingModule,
     TodoModule,
+    FormsModule,
     StoreModule.forRoot({}, {
       runtimeChecks: {
         strictStateImmutability: true,
